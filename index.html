@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather & Local News</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            Mausam
+        </div>
+
+        <div class="header-text">
+            Mausam & News
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <input type="text" id="searchInput" placeholder="Enter city name" autocomplete="off">
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+                <button id="locationBtn">
+                    My Location
+                </button>
+
+            </div>
+
+            <div id="errorMessage"></div>
+
+        </section>
+
+
+        <section class="weather-section">
+
+            <div class="weather-top">
+
+                <div class="location">
+                    <p>Current Weather</p>
+
+                    <h1 id="cityName">
+                        Pune
+                    </h1>
+
+                    <span id="countryName">
+                        India
+                    </span>
+                </div>
+
+
+                <div class="weather-main">
+
+                    <div class="weather-icon" id="weatherIcon">
+                        ☀️
+                    </div>
+
+                    <div>
+                        <h2 id="temperature">
+                            --°C
+                        </h2>
+
+                        <p id="weatherText">
+                            Loading...
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="weather-details">
+
+                <div class="weather-box">
+                    <h3>Feels Like</h3>
+                    <p id="feelsLike">--</p>
+                </div>
+
+                <div class="weather-box">
+                    <h3>Humidity</h3>
+                    <p id="humidity">--</p>
+                </div>
+
+                <div class="weather-box">
+                    <h3>Wind</h3>
+                    <p id="wind">--</p>
+                </div>
+
+                <div class="weather-box">
+                    <h3>Rain Chance</h3>
+                    <p id="rainChance">--</p>
+                </div>
+
+                <div class="weather-box">
+                    <h3>Sunrise</h3>
+                    <p id="sunrise">--</p>
+                </div>
+
+                <div class="weather-box">
+                    <h3>Sunset</h3>
+                    <p id="sunset">--</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="forecast-section">
+
+            <div class="section-heading">
+                <h2>7 Day Forecast</h2>
+                <p>Weather forecast for the upcoming days</p>
+            </div>
+
+            <div id="forecastContainer" class="forecast-container">
+
+                <div class="loading">
+                    Loading forecast...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="news-section">
+
+            <div class="section-heading">
+                <h2>Latest Local News</h2>
+                <p>Latest news related to your searched location</p>
+            </div>
+
+            <div id="newsContainer" class="news-container">
+
+                <div class="loading">
+                    Loading news...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            Hope You Liked It
+        </p>
+
+        <p>
+            Thanks For Using Visit Again
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
